@@ -6,24 +6,39 @@
     <title>LAM Landingpage</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='code.js'></script>
+    <script src='script.js'></script>
 </head>
 <body>
+<div id="main">
     <header>
-        <img class="logo" src="images/logo.png" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">BEZOEK</a></li>
-                <li><a href="#">NIEUWS</a></li>
-                <li><a href="#">TAAL</a></li>
-                <li><a class="cta" href="#"><button>TICKETS</button></a></li>
-                <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </ul>
-        </nav>
+    <nav id="navbar">
+    <img class="logo" src="images/logo.png" alt="logo" width="200" height="80">
+        <ul>
+            <li><a class="nb" href="#">BEZOEK</a></li>
+            <li><a class="nb" href="#">NIEUWS</a></li>
+            <li><a class="nb" href="#">TAAL</a></li>
+            <li><a class="tickets" href="#">TICKETS</a></li>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </ul>
+    </nav>
     </header>
+    <section>
+        <div class="box">
+            <h3>Welkom</h3>
+            <p></p>
+        </div>
+    </section>
+    <section>
+        <div class="box2">
+            <h3 class="tickets2" >Tickets</h3>
+            <p>Zin om te komen? Bestel dan hier jouw ticket met starttijd.</p>
+            <p class="reserveer" >Reserveer nu</p>
+        </div>
+    </section>
+</div>
 </body>
 </html>
