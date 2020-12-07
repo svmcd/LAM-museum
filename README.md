@@ -1,6 +1,6 @@
 # Beroepsopdracht: Museum Online
 
-**Samed polat & Byron van Herrewaarden**
+**Samed Polat & Byron van Herrewaarden**
 
 [LAM Landingpage](http://30859.hosts1.ma-cloud.nl/MuseumOnline/index.html) (Nog niet af)
 
