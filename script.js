@@ -1,3 +1,3 @@
-function myFunction(x) {
-    x.classList.toggle("change");
+function imgSlider(anything){
+    document.querySelector('.kunstwerk').src = anything;
 }
