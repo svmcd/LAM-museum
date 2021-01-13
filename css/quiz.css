@@ -1,0 +1,263 @@
+.sectionQuiz {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.custom-box {
+    max-width: 700px;
+    background-color: #9e7452;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-box::before
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide {
+    display: none;
+}
+
+.home-box h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.home-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.home-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color: white;
+    font-weight: 400;
+}
+
+.home-box p span{
+    font-weight: 500;
+}
+
+.home-box .quizButton {
+    margin-top: 20px;
+}
+
+.quizButton {
+    padding: 15px 45px;
+    background-color: white;
+    color: black;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.quizButton:hover {
+    background: #74553b;
+    color: white;
+    border-color: white;
+    transition: 0.3s;
+}
+
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-button,
+.quiz-box .answers-indicator {
+    width: 100%;
+    float: left;
+}
+
+.quiz-box .question-number{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 2px solid #74553b;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+.quiz-box .question-text{
+    font-size: 22px;
+    color: white;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.quiz-box .option-container .option{
+    background-color: #74553b;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong {
+    color: #ffffff;
+}
+.quiz-box .option-container .option.correct {
+
+}
+
+.quiz-box .quizButton {
+    margin: 15px 0;
+}
+
+.quiz-box .answers-indicator {
+    border-top: 2px solid #74553b;
+}
+
+.quiz-box .answers-indicator div{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #74553b;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 15px ;
+}
+
+.quiz-box .answers-indicator div.correct{
+    background-image: url(../images/checkmark.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quiz-box .answers-indicator div.wrong{
+    background-image: url(../images/checkmark.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result-box {
+    text-align: center;
+}
+
+.order {
+    text-decoration: none;
+    color: black;
+}
+
+.order:hover {
+    color: white;
+}
+
+.result-box.hide {
+    display: none;
+}
+
+.result-box h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
+.result-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0px;
+}
+
+.result-box table td {
+    color: white;
+    border: 2px solid #74553b;
+    padding: 8px 15px;
+    font-weight: 500px;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.result-box table tr td {
+    text-align: center;
+}
+
+.result-box .quizButton{
+    margin-right: 20px;
+}
+
+.resultImage {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.result-box h3 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

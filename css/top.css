@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+
+/* #74553b */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 100px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a:hover {
+    color: #74553b;
+    transition: 0.3s;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #9e7452;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.kunstwerk {
+    max-width: 400px;
+    height: auto;
+}
+
+.contentBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentBox .textBox {
+    position: relative;
+    max-width: 600px;
+    font-size: 15px;
+}
+
+.contentBox .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+.contentBox .textBox h2 span {
+    color: #9e7452;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.contentBox .textBox p {
+    color: #333;
+    margin-top: 10px;
+}
+
+.contentBox .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #9e7452;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.contentBox .textBox a:hover {
+    background: #74553b;
+    transition: 0.3s;
+}
+
+.contentBox .imgBox {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.thumb li:hover{
+    transform: translateY(-20px);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.thumb li img {
+    max-width: 100px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #74553b;
+    clip-path: circle(600px at right 800px);
+}
