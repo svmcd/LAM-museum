@@ -17,8 +17,8 @@ footer .ftr h3{
     color: #fff;
 }
 
-.content {
-    
+footer .content li a {
+    cursor: pointer;
 }
 
 footer .content{
