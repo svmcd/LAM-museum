@@ -16,8 +16,8 @@ const quiz = [
         answer:0
     },
     {
-        q: 'Van welk merk is je telefoon?',
-        options:['Apple','Samsung','Anders'],
+        q: 'Vind je jezelf eem simpel persoon of moeilijk persoon',
+        options:['Simpel','Moeilijk','Gemixt'],
         answer:0
     },
     {

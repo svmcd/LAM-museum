@@ -16,8 +16,8 @@ const quiz = [
         answer:0
     },
     {
-        q: 'What brand is your phone?',
-        options:['Apple','Samsung','Other'],
+        q: 'Do you consider yourself a simple person or difficult person',
+        options:['Simpel','difficult','Mixed'],
         answer:0
     },
     {
